@@ -1,3 +1,4 @@
+
 require_relative "../config/environment.rb"
 
 class Student
@@ -10,6 +11,7 @@ class Student
     @name=name
     @grade=grade
     @id=id
+  end
 
 
 end
