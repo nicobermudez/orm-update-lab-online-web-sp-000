@@ -30,7 +30,7 @@ class Student
     SQL
     DB[:conn].execute(sql)
   end
-  
+
   def save
     if self.id
       self.update
@@ -42,6 +42,11 @@ class Student
       DB[:conn].execute(sql, self.name, self.grade)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     end
+  end
+
+  def self.create(name, grade)
+    student = Student.new(name, grade)
+    student.save
   end
 
   def self.new_from_db(row)
@@ -64,10 +69,7 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 
-  def self.create(name, grade)
-    student = Student.new(name, grade)
-    student.save
-  end
+
 
 
 end
