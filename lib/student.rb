@@ -13,10 +13,13 @@ class Student
     @id=id
   end
 
+  def save
+  end
+
   def self.new_from_db
   end
 
-  def save
+  def self.find_by_name 
   end
 
   def self.create_table
