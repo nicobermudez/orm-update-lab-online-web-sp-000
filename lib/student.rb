@@ -13,6 +13,9 @@ class Student
     @id=id
   end
 
+  def self.new_from_db
+  end
+
   def save
   end
 
