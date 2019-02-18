@@ -22,6 +22,9 @@ class Student
   def self.find_by_name
   end
 
+  def update
+  end
+
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students (
