@@ -13,7 +13,7 @@ class Student
     @id=id
   end
 
-  def save 
+  def save
   end
 
   def self.create_table
@@ -35,7 +35,7 @@ class Student
   end
 
   def self.create(name, grade)
-    
+
   end
 
 
