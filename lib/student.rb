@@ -18,9 +18,7 @@ class Student
       INSERT INTO students (name, grade)
       VALUES (?, ?)
     SQL
-  end
-
-DB[:conn].execute(sql, self.name, self.grade
+    DB[:conn].execute(sql, self.name, self.grade
   end
 
   def self.new_from_db
